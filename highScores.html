@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Scores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex justify-center mt-28">
+        <h1 class="font-bold text-4xl text-[#253758]">
+            High Scores
+        </h1>
+    </div>
+    <ol class="flex justify-center" id="highscores"></ol>
+    <div class="flex justify-center mt-10">
+        <div class="flex justify-between w-1/3">
+            <a class="block px-4 py-2 mt-8 text-2xl font-medium text-[#FFFFFF] bg-red-600 rounded-lg hover:text-gray-200 focus:text-gray-200 hover:bg-red-700 focus:bg-red-700 focus:outline-none focus:shadow-outline" href="/index.html">Go Back</a>
+            <button class="block px-4 py-2 mt-8 text-2xl font-medium text-[#FFFFFF] bg-red-600 rounded-lg hover:text-gray-200 focus:text-gray-200 hover:bg-red-700 focus:bg-red-700 focus:outline-none focus:shadow-outline" id="clearButton">Clear Scores</button>
+        </div>
+    </div>
+    <!-- link to js file -->
+    <script src="./assets/js/highscores.js"></script>
+</body>
+</html>

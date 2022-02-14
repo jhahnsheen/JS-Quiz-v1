@@ -5,34 +5,60 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>JavaScript Quiz</title>
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
 
     <body>
-        <!-- example displays a link to scoreboard on app first top left -->
-
-        <!-- timer located on top right -->
-
+       <header class="flex justify-between">
+           <div>
+                <!-- example displays a link to scoreboard on app first top left -->
+                <a class="block px-4 py-2 mt-2 text-sm font-medium text-[#253758] bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/highScores.html">View High Scores</a>
+           </div>
+            <!-- timer located on top right -->
+            <div id="timer" class="block px-4 py-2 mt-2 text-sm font-medium text-[#253758] bg-transparent">
+                Time: <span id="time">75</span>
+            </div>
+       </header>
         <!-- main screen -->
-
+        <main class="flex justify-center mt-16">
             <!-- start screen (pre quiz) -->
+            <section id="startScreen">
                 <!-- heading quiz title -->
+                <h1 class="flex justify-center font-bold text-4xl text-[#253758]">JavaScript Quiz Challenge</h1>
                 <!-- quiz instructions -->
+                <div class="flex justify-center">
+                    <p class="flex justify-center mt-8 font-semibold w-2/5 text-center">
+                        Answer the following JavaScript-related questions within the time limit. Incorrect answers will subtract 15 seconds from your time. Your final score will be equal to the time remaining.
+                    </p>
+                </div>
                 <!-- start button -->
+                <div class="flex justify-center">
+                    <button class="block px-4 py-2 mt-8 text-2xl font-medium text-[#FFFFFF] bg-red-600 rounded-lg hover:text-gray-200 focus:text-gray-200 hover:bg-red-700 focus:bg-red-700 focus:outline-none focus:shadow-outline" id="startButton">Start Quiz</button>
+                </div>
+            </section>
+
             <!-- question mode (mid quiz) -->
+            <section>
                 <!-- question -->
+                <h2></h2>
                 <!-- answer choices -->
+                <div></div>
                 <!-- right/wrong -->
+            </section>
+
             <!-- results screen (post quiz) -->
                 <!-- finished header -->
                 <!-- score display -->
                 <!-- enter initials -->
+
             <!-- scoreboard -->
                 <!-- list of scores -->
                 <!-- restart button -->
                 <!-- clear scoreboard button -->
+        </main>
 
         <!-- link to js file -->
         <script src="assets/js/logic.js"></script>
+        <script src="assets/js/quiz.js"></script>
     </body>
 </html>
