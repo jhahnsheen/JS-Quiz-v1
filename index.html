@@ -38,20 +38,30 @@
             </section>
 
             <!-- question mode (mid quiz) -->
-            <section id="quizScreen">
+            <section class="hidden" id="quizScreen">
                 <!-- question -->
-                <h2 class="" id="quizQuestion"></h2>
+                <h2 class="flex justify-center font-bold text-2xl text-[#253758]" id="quizQuestion"></h2>
                 <!-- answer choices -->
-                <div class="" id="answerChoice"></div>
-                <!-- right/wrong -->
+                <div class="flex justify-center" id="answerChoice"></div>
             </section>
 
             <!-- results screen (post quiz) -->
-            <section id="resultScreen">
+            <section class="hidden" id="resultScreen">
                 <!-- finished header -->
-                <h2>...and you're done!</h2>
+                <div class="flex justify-center">
+                    <h2 class="flex justify-center font-bold text-4xl text-[#253758]">...and you're done!</h2>
+                </div>
                 <!-- score display -->
-                <!-- enter initials -->
+                <div class="flex justify-center">
+                    <p>Your score is <span id="endScore"></span>!</p>
+                </div>
+                <!-- enter initials form -->
+                <div class="flex justify-center">
+                    <form class="flex justify-center mt-8 font-semibold w-2/5 text-center">
+                        Enter your first and last initials: <input class="bg-[#F1F3F5] h-10 pl-5 pr-5 rounded-full text-sm focus:outline-none" type="text" id="initials" max="2"/>
+                        <button id="submitButton" class="block px-4 py-2 mt-8 text-2xl font-medium text-[#FFFFFF] bg-red-600 rounded-lg hover:text-gray-200 focus:text-gray-200 hover:bg-red-700 focus:bg-red-700 focus:outline-none focus:shadow-outline" type="submit">Submit your Score!</button>
+                    </form>
+                </div>
             </section>
 
         </main>
