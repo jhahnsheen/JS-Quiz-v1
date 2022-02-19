@@ -40,9 +40,13 @@
             <!-- question mode (mid quiz) -->
             <section class="hidden" id="quizScreen">
                 <!-- question -->
-                <h2 class="flex justify-center font-bold text-2xl text-[#253758]" id="quizQuestion"></h2>
+                <div class="flex justify-center">
+                    <h2 class="flex justify-center font-bold text-2xl text-[#253758]" id="quizQuestion"></h2>
+                </div>
                 <!-- answer choices -->
-                <div class="flex justify-center" id="answerChoice"></div>
+                <div class = "flex justify-center">
+                    <div class="flex flex-col justify-between" id="answerChoice"></div>
+                </div>
             </section>
 
             <!-- results screen (post quiz) -->
@@ -53,13 +57,14 @@
                 </div>
                 <!-- score display -->
                 <div class="flex justify-center">
-                    <p>Your score is <span id="endScore"></span>!</p>
+                    <p class="mt-8 font-semibold text-xl">Your score is <span id="endScore"></span>!</p>
                 </div>
                 <!-- enter initials form -->
                 <div class="flex justify-center">
-                    <form class="flex justify-center mt-8 font-semibold w-2/5 text-center">
-                        Enter your first and last initials: <input class="bg-[#F1F3F5] h-10 pl-5 pr-5 rounded-full text-sm focus:outline-none" type="text" id="initials" max="2"/>
-                        <button id="submitButton" class="block px-4 py-2 mt-8 text-2xl font-medium text-[#FFFFFF] bg-red-600 rounded-lg hover:text-gray-200 focus:text-gray-200 hover:bg-red-700 focus:bg-red-700 focus:outline-none focus:shadow-outline" type="submit">Submit your Score!</button>
+                    <form class="flex justify-around mt-8 font-semibold text-center">
+                        <p class="text-xl mr-2">Enter your first and last initials: </p>
+                        <input class="bg-[#F1F3F5] h-7 pl-5 pr-5 rounded-full text-sm focus:outline-none" type="text" id="initials" max="2"/>
+                        <button id="submitButton" class="mx-4 block px-4 text-2xl font-medium text-[#FFFFFF] bg-red-600 rounded-lg hover:text-gray-200 focus:text-gray-200 hover:bg-red-700 focus:bg-red-700 focus:outline-none focus:shadow-outline">Submit</button>
                     </form>
                 </div>
             </section>
@@ -68,6 +73,5 @@
 
         <!-- link to js file -->
         <script src="assets/js/logic.js"></script>
-        <script src="assets/js/quiz.js"></script>
     </body>
 </html>
